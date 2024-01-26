@@ -1,0 +1,17 @@
+// noticias.pug
+html
+head
+  title Noticias
+  link(rel='icon', type='image/png', href='logo.png') 
+body
+  h1 Noticias
+  ul
+    each noticia, index in noticias
+      li
+        h2= noticia.titulo
+        p= noticia.descripcion
+        p= noticia.categoria
+        p= noticia.fecha
+        img(src=noticia.url_imagen, alt=noticia.titulo)
+        a(href='/noticias/borrar/#{index}') Borrar
+  a(href='/noticias/insertar') Agregar Noticia

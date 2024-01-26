@@ -1,0 +1,27 @@
+// insertar.pug
+html
+head
+  title Insertar Noticia
+  link(rel='icon', type='image/png', href='logo.png') 
+body
+  h1 Insertar Noticia
+  form(action='/noticias/agregar', method='POST')
+    label(for='titulo') Título:
+    input(type='text', name='titulo', required)
+    br
+    label(for='descripcion') Descripción:
+    textarea(name='descripcion', required)
+    br
+    label(for='categoria') Categoría:
+    select(name='categoria', required)
+      each categoria in categorias
+        option(value=categoria)= categoria
+    br
+    label(for='fecha') Fecha:
+    input(type='date', name='fecha', required)
+    br
+    label(for='url_imagen') URL de la Imagen:
+    input(type='text', name='url_imagen', required)
+    br
+    input(type='submit', value='Agregar Noticia')
+  a(href='/noticias') Volver a Noticias

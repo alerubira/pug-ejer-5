@@ -1,0 +1,3 @@
+{"titulo":"Noticia 1","descripcion":"Descripción 1","categoria":"Deporte","fecha":"2024-01-26","url_imagen":"https://ejemplo.com/imagen1.jpg"}
+{"titulo":"Noticia 2","descripcion":"Descripción 2","categoria":"Actualidad","fecha":"2024-01-26","url_imagen":"https://ejemplo.com/imagen2.jpg"}
+{"titulo":"Noticia-3","descripcion":"contenido de la noticia 3","categoria":"Ciencia","fecha":"2024-01-24","url_imagen":"https://ejemplo.com/imagen3.jpg"}
