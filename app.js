@@ -28,11 +28,34 @@ app.post('/noticias/agregar', (req, res) => {
     res.redirect('/noticias');
 });
 
-app.get('/noticias/borrar/:id', (req, res) => {
+/*app.get('/noticias/borrar/:id', (req, res) => {
     const idNoticia = req.params.id;
     borrarNoticia(idNoticia);
     res.redirect('/noticias');
+});*/
+// ...
+
+app.get('/noticias/borrar/:id', (req, res) => {
+    const idNoticia = req.params.id;
+    
+    // Verificar si el ID es un número entero
+    if (!Number.isInteger(parseInt(idNoticia))) {
+        return res.status(400).send('El ID de la noticia no es válido');
+    }
+
+    const noticias = obtenerNoticias();
+
+    // Verificar si el ID está dentro del rango de índices del array
+    if (idNoticia < 0 || idNoticia >= noticias.length) {
+        return res.status(404).send('Noticia no encontrada');
+    }
+
+    borrarNoticia(parseInt(idNoticia));
+    res.redirect('/noticias');
 });
+
+// ...
+
 
 // Funciones de utilidad
 function obtenerNoticias() {

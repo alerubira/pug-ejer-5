@@ -13,5 +13,5 @@ body
         p= noticia.categoria
         p= noticia.fecha
         img(src=noticia.url_imagen, alt=noticia.titulo)
-        a(href='/noticias/borrar/#{index}') Borrar
+        a(href=`/noticias/borrar/${index}`) Borrar
   a(href='/noticias/insertar') Agregar Noticia
