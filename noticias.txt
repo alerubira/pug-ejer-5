@@ -1,2 +1,3 @@
-{"titulo":"Noticia 2","descripcion":"Descripción 2","categoria":"Actualidad","fecha":"2024-01-26","url_imagen":"bandera.png"}
-{"titulo":"Notici 4","descripcion":"se describe noticia 4","categoria":"Política","fecha":"2024-01-28","url_imagen":"bandera.png"}
+{"titulo":"Noticia 2","descripcion":"Descripción 2","categoria":"Actualidad","fecha":"2024-01-26","url_imagen":"/imagenes/bandera.png"}
+{"titulo":"Notici 4","descripcion":"se describe noticia 4","categoria":"Política","fecha":"2024-01-28","url_imagen":"imagenes/bandera.png"}
+{"titulo":"Noticia 5","descripcion":"descripcion 5","categoria":"Ciencia","fecha":"2024-01-29","url_imagen":"imagenes/bandera.png"}
